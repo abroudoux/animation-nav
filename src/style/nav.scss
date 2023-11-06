@@ -1,0 +1,33 @@
+header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        background-color: red;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        li {
+            padding: 2vh 2vw;
+            color: black;
+            transition: .5s;
+        }
+    }
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
